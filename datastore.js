@@ -6,7 +6,6 @@ const data = [
       C:'Fish', 
       D:'Shell',
       answer:'Crustacean',
-      image:'https://image.flaticon.com/icons/svg/202/202245.svg',
       alt:'seahorse icon'
 },
 {
@@ -16,7 +15,6 @@ const data = [
     C:'Pomeranian', 
     D:'Chihuahua',
     answer:'Chihuahua',
-    image:'https://image.flaticon.com/icons/svg/390/390251.svg',
     alt:'chihuahua icon'
 },
 {
@@ -26,7 +24,6 @@ const data = [
     C:'Both of the above',
     D:'None of the above',
     answer:'Black with white stripes',
-    image:'https://image.flaticon.com/icons/svg/578/578452.svg',
     alt:'zebra icon'
 },
 {
@@ -36,7 +33,6 @@ const data = [
     C:'Condor',
     D:'Albatross',
     answer:'Albatross',
-    image:'https://image.flaticon.com/icons/svg/47/47206.svg',
     alt:'albotross icon'
 },
 {
@@ -46,7 +42,6 @@ const data = [
     C:'Apatosaurus (aka brontosaurs)',
     D:'Spinosaurus',
     answer:'Blue whale',
-    image:'https://image.flaticon.com/icons/svg/1997/1997417.svg',
     alt:'blue whale icon'
 },
 {
@@ -56,7 +51,6 @@ const data = [
     C:'Dogs',
     D:'Horses',
     answer: 'Cats',
-    image:'https://image.flaticon.com/icons/svg/616/616430.svg',
     alt:'cat icon'
 },
 {
@@ -66,7 +60,6 @@ const data = [
     C:'Galapagos tortois',
     D:'Rougheye rockfish',
     answer: 'Ocean quahog (clam)',
-    image:'https://www.flaticon.com/premium-icon/icons/svg/1806/1806124.svg',
     alt:'clam icon'
 },
 {
@@ -76,7 +69,6 @@ const data = [
     C:'Cows',
     D:'Dams',
     answer:'Cows',
-    image:'https://image.flaticon.com/icons/svg/427/427560.svg',
     alt:'elephant icon'
 },
 {
@@ -86,7 +78,6 @@ const data = [
     C:'Camels',
     D:'Ravens',
     answer:'Flamingos',
-    image:'https://image.flaticon.com/icons/svg/878/878056.svg',
     alt:'flamingo icon'
 },
 {
@@ -96,7 +87,6 @@ const data = [
     C:'Flying fish',
     D:'Tuna',
     answer:'Sailfish',
-    image:'https://image.flaticon.com/icons/svg/235/235434.svg',
     alt:'sailfish icon'
 },
 ];

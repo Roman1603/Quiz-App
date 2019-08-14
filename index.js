@@ -13,7 +13,7 @@ const store = {
 	state: 'off',
 };
 
-let currentQuestion = 0;
+
 
 //Function that generates welcome
 function generateWelcome(){
@@ -48,20 +48,23 @@ function generateState() {
 function generateCorrect() {
 	return `<div class='overlay'>
           <h3>That is correct!</h3>
-          <div class="imgDiv">
-          <img class="imgQ" src=${data[currentQuestion].image} 
-          alt=${data[currentQuestion].alt}>
-        </div>
+          <img class= "hands" src = "https://image.flaticon.com/icons/svg/1616/1616567.svg"></img>
           <button class='btn next-button'>Next</button>
            </div>`;
  
 }
+
+
+
 //Function that generates incorrect answer
 function generateIncorrect(){
 return `<div class='overlay'>
 <h3>That is incorrect!</h3>
+<p class = "feedback">The correct answer is ${data[store.index].answer}</p>
+<img class= "facePalm" src = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/face-palm_1f926.png"></img>
 <button class='btn next-button'>Next</button>
 </div>`;
+
 }
 //Function that generates results
 function generateResults (){
@@ -81,6 +84,10 @@ return `<div class='overlay'>
   </div>
   `;
 }
+
+// Correct answer feedback
+
+
 //RENDER FUCNTIONS
 function renderWelcome(){
   const html = generateWelcome();
@@ -100,11 +107,15 @@ const question = data[store.index].question,
 function renderCorrect(){
 const html = generateCorrect();
 $('.container').html(html);
+$('.container').css("background-color", "green")
 }
 
 function renderIncorrect(){
 const html = generateIncorrect();
 $('.container').html(html);
+$('.container').css("background-color", "red")
+
+
 }
 
 function renderState(){
@@ -143,7 +154,7 @@ function handleSubmit() {
 			renderIncorrect();
 		}
 		renderState();
-	});
+  });
 }
 
 function handleNext() {
@@ -154,7 +165,10 @@ function handleNext() {
 			store.index++;
 			renderQuestion();
 			renderState();
-		}
+    }
+    $('.container').css('background-color', ' rgba(255, 255, 255, 0.5)')
+    $('.feedback').hide(data[store.index].answer)
+  
 	});
 }
 
