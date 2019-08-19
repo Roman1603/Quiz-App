@@ -29,10 +29,10 @@ function generateQuestion(question, A, B, C, D,){
   return `<form>
         <fieldset>
         <legend>${question}</legend>
-        <label for ='A'><input type='radio' name='answer' value="${A}" required>${A}</label>
-        <label for ='B'><input type='radio' name='answer' value="${B}" required>${B}</label>
-        <label for ='C'><input type='radio' name='answer' value="${C}" required>${C}</label>
-        <label for ='D'><input type='radio' name='answer' value="${D}" required>${D}</label>
+        <label for ='A'><input type='radio' id="A" name='answer' value="${A}" required>${A}</label>
+        <label for ='B'><input type='radio' id="B" name='answer' value="${B}" required>${B}</label>
+        <label for ='C'><input type='radio' id="C" name='answer' value="${C}" required>${C}</label>
+        <label for ='D'><input type='radio' id="D" name='answer' value="${D}" required>${D}</label>
         <button class='btn submit-button'>Submit</button>
         </fieldset>
   </form>`;
